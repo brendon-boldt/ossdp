@@ -23,9 +23,11 @@ group :development, :test do
 end
 
 # Add support for the MySQL
+=begin
 group :production, :mysql do
   gem 'mysql2'
 end
+=end
 
 group :production, :postgresql do
   gem 'pg'
@@ -66,3 +68,4 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+  gem 'redcarpet'

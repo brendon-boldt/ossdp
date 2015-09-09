@@ -1,0 +1,175 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  padding: 0 15 15 15;
+  margin: 0;
+//  background-color: #eee;
+  background-color: #333;
+  font-family: nimbus roman no9 l;
+  color : #fff;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-variant: small-caps;
+}
+
+#bottomBanner a, #banner a {
+  color : white;
+  text-decoration: none;
+  transition: text-shadow 0.5s;
+}
+
+#bottomBanner a:hover, #banner a:hover {
+  text-shadow: 0 0 10px white;
+}
+
+#banner {
+  //box-shadow: 0 -35px 30px -10px #eee inset;
+  box-shadow: 0 -35px 30px -10px #333 inset;
+  text-shadow:  0 0 10px black,
+                0 0 10px black,
+                0 0 10px black ;
+  height : 100px;
+  width : 100%;
+  top : 0px;
+  text-align : center;
+  vertical-align: text-center;
+  font-variant: small-caps;
+  background-image: image-url('f2.jpg');
+  background-position: 20% 20%;
+  display: table;
+}
+
+#bottomBanner {
+  text-shadow:  0 0 10px black,
+                0 0 10px black,
+                0 0 10px black ;
+  //box-shadow: 0 25px 20px -10px #eee inset;
+  box-shadow: 0 25px 20px -10px #333 inset;
+  position: relative;
+  height : 100px;
+  color : #fff;
+  width : 100%;
+  bottom : 0px;
+  text-align : center;
+  vertical-align: text-center;
+  font-variant: small-caps;
+  background-image: image-url('f2.jpg');
+  background-position: 100% 30%;
+  font-size: 14pt;
+}
+
+#bannerTitle {
+  display: table-cell;
+  text-align: left;
+  padding-left: 20px;
+  vertical-align: bottom;
+  position: relative;
+  font-size: 32pt;
+  font-weight: bold;
+}
+
+#bannerText {
+  display: table-cell;
+  text-align: right;
+  padding-right: 20px;
+  vertical-align: bottom;
+  font-size: 24pt;
+  color: white;
+}
+
+#mainBox {
+  padding : 30px 180px 20px 180px;
+  text-align: justify;
+  //color: #444;
+  color : #eee;
+  font-size: 14pt;
+}
+
+#mainBox h1, h2, h3 {
+  color: white;
+}
+
+#mainBox a {
+  color: #ccc
+}
+
+#backgroundText {
+  color: transparent;
+  font-size: 128pt;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: -1;
+  font-family: urw chancery l, cursive, serif;
+  font-style: oblique;
+  //text-shadow: 0 0 10px #ddd;
+  text-shadow: 0 0 10px #666;
+}
+
+#backgroundSignature {
+  color: transparent;
+  font-size: 108pt;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  z-index: -1;
+  font-family: urw chancery l, cursive, serif;
+  font-style: oblique;
+  //text-shadow: 0 0 10px #ddd;
+  text-shadow: 0 0 10px #666;
+}
+
+.articleTile {
+  margin: 30px 30px 30px 30px;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(100,100,100,0.5);
+  box-shadow: 0 0 20px white, inset 0 0 20px white;
+  border-radius: 10px;
+  font-family: urw chancery l, cursive, serif;
+  transition: box-shadow 0.5s;
+  position: relative;
+
+  height: 170px;
+}
+
+.articleTile:hover {
+  box-shadow: 0 0 20px white, inset 0 0 20px white,
+    0 0 20px white, inset 0 0 20px white;
+}
+
+.articleTile a {
+  text-decoration: none
+}
+
+.tileTitle {
+  font-size: 32pt;
+}
+
+.tileAbstract {
+  font-size: 16pt;
+}
+
+.tileIcon {
+  height: 150px;
+  width: 150px;
+  background-color: rgb(50,50,50);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
