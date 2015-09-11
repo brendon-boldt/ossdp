@@ -50,7 +50,8 @@ h1, h2, h3 {
   text-align : center;
   vertical-align: text-center;
   font-variant: small-caps;
-  background-image: image-url('f2.jpg');
+  //background-image: image-url('f2.jpg');
+  background-image: url('/images/f2.jpg');
   background-position: 20% 20%;
   display: table;
 }
@@ -69,7 +70,8 @@ h1, h2, h3 {
   text-align : center;
   vertical-align: text-center;
   font-variant: small-caps;
-  background-image: image-url('f2.jpg');
+  //background-image: image-url('f2.jpg');
+  background-image: url('/images/f2.jpg');
   background-position: 100% 30%;
   font-size: 14pt;
 }
@@ -116,7 +118,7 @@ h1, h2, h3 {
   top: 100px;
   left: 100px;
   z-index: -1;
-  font-family: urw chancery l, cursive, serif;
+  font-family: urw chancery l, monotype corsiva, serif;
   font-style: oblique;
   //text-shadow: 0 0 10px #ddd;
   text-shadow: 0 0 10px #666;
@@ -129,7 +131,7 @@ h1, h2, h3 {
   bottom: 100px;
   right: 100px;
   z-index: -1;
-  font-family: urw chancery l, cursive, serif;
+  font-family: urw chancery l, monotype corsiva, serif;
   font-style: oblique;
   //text-shadow: 0 0 10px #ddd;
   text-shadow: 0 0 10px #666;
@@ -141,7 +143,7 @@ h1, h2, h3 {
   background-color: rgba(100,100,100,0.5);
   box-shadow: 0 0 20px white, inset 0 0 20px white;
   border-radius: 10px;
-  font-family: urw chancery l, cursive, serif;
+  font-family: urw chancery l, monotype corsiva, serif;
   transition: box-shadow 0.5s;
   position: relative;
 
