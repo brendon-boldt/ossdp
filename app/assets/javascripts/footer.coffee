@@ -12,8 +12,9 @@ ready = ->
   $ ->
     bb = $('#bottomBanner')
     if (window.innerHeight > bb.offset().top + bb.height())
-      $('#bottomBanner, #bottomBannerImage').css('position', 'absolute', 'bottom', '0')
-
+      $('#bottomBanner').css('position', 'absolute', 'bottom', '0')
+      $('#bottomBannerImage').css('bottom','0')
+      $('body').css('position', 'absolute')
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

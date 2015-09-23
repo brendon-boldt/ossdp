@@ -8,6 +8,7 @@
 
 #centralImage {
   height: auto;
+  //width: auto;
   width: 70%;
   position: relative;
   margin: 0 auto;
@@ -16,7 +17,7 @@
 
 .welcomeTile {
   position: relative;
-  margin: 30px 0 30px 0;
+  margin: 30px auto 30px auto;
   padding: 10px 20px 10px 20px;
   background-color: rgba(100,100,100,0.5);
   box-shadow: 0 0 20px white, inset 0 0 20px white;
@@ -24,7 +25,11 @@
   font-family: urw chancery l, monotype corsiva, serif;
   font-size: 36pt;
   transition: box-shadow 0.5s;
-  width: 300px;
+  //width: 300px;
+  //width: 100%;
+  width: auto;
+  vertical-align: top;
+
 }
 
 .welcomeTile:hover {
@@ -59,16 +64,16 @@
 }
 
 #welcomeTable div {
-  vertical-align: top;
 }
 
 #welcomeBox {
   text-align: center;
-  margin-top: 0%;
 }
 
-#welcomeTableColumn {
+.welcomeTableColumn {
   display: table-cell;
+  vertical-align: middle;
+  width: 25%;
 }
 
 #welcomeText {

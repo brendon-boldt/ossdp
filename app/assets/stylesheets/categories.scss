@@ -32,6 +32,12 @@
   font-size: 16pt;
 }
 
+@media only screen and (max-width:481px) {
+  .tileAbstract {
+    display: none;
+  }
+}
+
 .tileIcon {
   box-shadow: 0 0 15px white;
   height: 150px;

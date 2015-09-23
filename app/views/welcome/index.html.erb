@@ -7,16 +7,17 @@
   <div id="backgroundText">Salutations</div>
   <div id='welcomeTable'>
 
-    <div style='display: table-cell; vertical-align: middle;'>
+    <!--<div style='display: table-cell; vertical-align: middle;'>-->
+    <div class='welcomeTableColumn'>
       <div class='welcomeTile leftWelcomeTile'>
         LinkedIn
         <%= raw link_surface 'https://linkedin.com/in/brendonjboldt' %>
       </div>
     </div>
 
-    <div class='welcomeTableColumn'>
+    <div class='' style='display: table-cell;'>
       <div class='welcomeTile centerWelcomeTile'>
-        Resume
+        Resum&#233;
         <%= raw link_surface resume_link %>
       </div>
       <%= image_tag(image_url('welcome_image.png'), :id => 'centralImage') %>
@@ -25,7 +26,8 @@
         <%= raw link_surface 'mailto:brendon_boldt@yahoo.com' %>
       </div>
     </div>
-    <div style='display: table-cell; vertical-align: middle;'>
+    <!--<div style='display: table-cell; vertical-align: middle;'>-->
+    <div class='welcomeTableColumn'>
       <div class='welcomeTile rightWelcomeTile'>
         GitHub
         <%= raw link_surface 'https://github.com/brendon-boldt' %>
