@@ -1,3 +1,43 @@
 // Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.articleTile {
+  margin: 30px 30px 30px 30px;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(100,100,100,0.5);
+  box-shadow: 0 0 20px white, inset 0 0 20px white;
+  border-radius: 10px;
+  font-family: urw chancery l, monotype corsiva, serif;
+  transition: box-shadow 0.5s;
+  position: relative;
+
+  height: 170px;
+}
+
+.articleTile:hover {
+  box-shadow: 0 0 20px white, inset 0 0 20px white,
+    0 0 20px white, inset 0 0 20px white;
+}
+
+.articleTile a {
+  text-decoration: none
+}
+
+.tileTitle {
+  font-size: 32pt;
+}
+
+.tileAbstract {
+  font-size: 16pt;
+}
+
+.tileIcon {
+  box-shadow: 0 0 15px white;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(50,50,50);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

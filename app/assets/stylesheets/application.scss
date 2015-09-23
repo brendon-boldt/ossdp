@@ -17,10 +17,17 @@
 body {
   padding: 0 15 15 15;
   margin: 0;
-//  background-color: #eee;
   background-color: #333;
   font-family: nimbus roman no9 l;
   color : #fff;
+
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  //background-image: url('/images/connections.png');
+  //background-position: center;
+  //background-repeat: repeat;
 }
 
 h1, h2, h3 {
@@ -39,8 +46,7 @@ h1, h2, h3 {
 }
 
 #banner {
-  //box-shadow: 0 -35px 30px -10px #eee inset;
-  box-shadow: 0 -35px 30px -10px #333 inset;
+  z-index: 10;
   text-shadow:  0 0 10px black,
                 0 0 10px black,
                 0 0 10px black ;
@@ -50,10 +56,30 @@ h1, h2, h3 {
   text-align : center;
   vertical-align: text-center;
   font-variant: small-caps;
-  //background-image: image-url('f2.jpg');
-  background-image: url('/images/f2.jpg');
   background-position: 20% 20%;
   display: table;
+  //background-image: url('/images/f2.jpg');
+}
+
+#bannerImage {
+  box-shadow: 0 -35px 30px -10px #333 inset;
+  background-image: url('/images/f2.jpg');
+  background-position: 20% 20%;
+  z-index: -100;
+  height : 100px;
+  width : 100%;
+  position: absolute;
+}
+
+#bottomBannerImage {
+  box-shadow: 0 25px 20px -10px #333 inset;
+  background-image: url('/images/f2.jpg');
+  background-position: 100% 30%;
+  z-index: -100;
+  height : 100px;
+  width : 100%;
+  position: absolute;
+  box-shadow: 0 25px 20px -10px #333 inset;
 }
 
 #bottomBanner {
@@ -61,7 +87,6 @@ h1, h2, h3 {
                 0 0 10px black,
                 0 0 10px black ;
   //box-shadow: 0 25px 20px -10px #eee inset;
-  box-shadow: 0 25px 20px -10px #333 inset;
   position: relative;
   height : 100px;
   color : #fff;
@@ -70,10 +95,10 @@ h1, h2, h3 {
   text-align : center;
   vertical-align: text-center;
   font-variant: small-caps;
-  //background-image: image-url('f2.jpg');
-  background-image: url('/images/f2.jpg');
+  //background-image: url('/images/f2.jpg');
   background-position: 100% 30%;
   font-size: 14pt;
+  z-index: -1;
 }
 
 #bannerTitle {
@@ -137,41 +162,14 @@ h1, h2, h3 {
   text-shadow: 0 0 10px #666;
 }
 
-.articleTile {
-  margin: 30px 30px 30px 30px;
-  padding: 10px 20px 10px 20px;
-  background-color: rgba(100,100,100,0.5);
-  box-shadow: 0 0 20px white, inset 0 0 20px white;
-  border-radius: 10px;
-  font-family: urw chancery l, monotype corsiva, serif;
-  transition: box-shadow 0.5s;
-  position: relative;
-
-  height: 170px;
-}
-
-.articleTile:hover {
-  box-shadow: 0 0 20px white, inset 0 0 20px white,
-    0 0 20px white, inset 0 0 20px white;
-}
-
-.articleTile a {
-  text-decoration: none
-}
-
-.tileTitle {
-  font-size: 32pt;
-}
-
-.tileAbstract {
-  font-size: 16pt;
-}
-
-.tileIcon {
-  height: 150px;
-  width: 150px;
-  background-color: rgb(50,50,50);
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+#backgroundImage {
+  background-image: url('/images/connections.png');
+  background-repeat: repeat;
+  opacity: 0.5;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -5;
 }

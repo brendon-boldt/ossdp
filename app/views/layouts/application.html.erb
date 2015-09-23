@@ -7,7 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="backgroundImage"></div>
+  <div id="bannerImage"></div>
   <div id="banner">
+
     <span id="bannerTitle" ><a href="/">Brendon J. Boldt</a></span>
     <div id="bannerText">
       <% first = true %>
@@ -23,17 +26,23 @@
     </div>
   </div>
 
-  <div id="mainBox">
+  <% if params[:controller] == 'welcome' %>
+    <div id="welcomeBox">
+  <% else %>
+    <div id="mainBox">
+  <% end %>
     <%= yield %>
   </div>
 
 
+  <div id="bottomBannerImage"></div>
   <div id="bottomBanner">
     <div id="backgroundSignature">Brendon J. Boldt</div>
     <br>
-    <a href="https://github.com/brendon-boldt">GitHub</a> | 
-    <a href="https://linkedin.com/in/brendonjboldt">LinkedIn</a> | 
-    <a href="mailto:brendon_boldt@yahoo.com">Email</a>
+    <a href="https://github.com/brendon-boldt" target='_blank'>GitHub</a> | 
+    <a href="https://linkedin.com/in/brendonjboldt" target='_blank'>LinkedIn</a> | 
+    <a href="mailto:brendon_boldt@yahoo.com" target='_blank'>Contact Me</a> |
+    <a href=<%=resume_link%> target='_blank'>Resume</a>
     <br><br>
     Powered by Ruby on Rails and Inspiration
   </div>

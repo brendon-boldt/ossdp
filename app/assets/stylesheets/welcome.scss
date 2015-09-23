@@ -6,22 +6,79 @@
   
 }
 
-
 #centralImage {
   height: auto;
-  width: 40%;
+  width: 70%;
   position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   box-shadow: 0 0 30px 10px white;
-  z-index: 1;
 }
 
-/*
-#centralImage {
-  height: auto;
-  width: 100%;
-  z-index: -1;
+.welcomeTile {
+  position: relative;
+  margin: 30px 0 30px 0;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(100,100,100,0.5);
+  box-shadow: 0 0 20px white, inset 0 0 20px white;
+  border-radius: 10px;
+  font-family: urw chancery l, monotype corsiva, serif;
+  font-size: 36pt;
+  transition: box-shadow 0.5s;
+  width: 300px;
 }
-*/
+
+.welcomeTile:hover {
+  box-shadow: 0 0 20px white, inset 0 0 20px white,
+    0 0 20px white, inset 0 0 20px white;
+}
+
+.welcomeTile a {
+  text-decoration: none;
+}
+
+.tileTitle {
+  font-size: 32pt;
+}
+
+.welcomeTileText {
+  font-family: serif;
+  font-style: italic;
+  font-size: 18pt;
+  padding: 20px 30px 20px 30px;
+}
+
+.centerWelcomeTile {
+  margin: 30px auto;
+  width: 70%;
+}
+
+#welcomeTable {
+  display: table;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#welcomeTable div {
+  vertical-align: top;
+}
+
+#welcomeBox {
+  text-align: center;
+  margin-top: 0%;
+}
+
+#welcomeTableColumn {
+  display: table-cell;
+}
+
+#welcomeText {
+  margin: 30px 10% 30px 10%;
+  padding: 30px 30px 30px 30px;
+  font-family: serif;
+  font-style: italic;
+  font-size: 18pt;
+  text-align: justify;
+  width: auto;
+}
+
+

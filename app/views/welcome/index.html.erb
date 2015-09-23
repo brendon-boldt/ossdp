@@ -4,7 +4,36 @@
 </head>
 
 <body style='text-align: center;'>
-  <div id="welcomeTitle"></div>
-    <%= image_tag(icon_url('Biography'), :id => 'centralImage') %>
+  <div id="backgroundText">Salutations</div>
+  <div id='welcomeTable'>
+
+    <div style='display: table-cell; vertical-align: middle;'>
+      <div class='welcomeTile leftWelcomeTile'>
+        LinkedIn
+        <%= raw link_surface 'https://linkedin.com/in/brendonjboldt' %>
+      </div>
+    </div>
+
+    <div class='welcomeTableColumn'>
+      <div class='welcomeTile centerWelcomeTile'>
+        Resume
+        <%= raw link_surface resume_link %>
+      </div>
+      <%= image_tag(image_url('welcome_image.png'), :id => 'centralImage') %>
+      <div class='welcomeTile centerWelcomeTile'>
+        Contact Me
+        <%= raw link_surface 'mailto:brendon_boldt@yahoo.com' %>
+      </div>
+    </div>
+    <div style='display: table-cell; vertical-align: middle;'>
+      <div class='welcomeTile rightWelcomeTile'>
+        GitHub
+        <%= raw link_surface 'https://github.com/brendon-boldt' %>
+      </div>
+    </div>
+  </div>
+  <div id="welcomeText" class="welcomeTile">
+    Salutations and welcome to my corner of the World Wide Web. First and foremost professionally, I am a software engineer. I have trained myself in the art of programming through my education, work, and leisure, and I am excited to continue to apply this skill elswhere. In particular, I am interested in theoretical areas of computer science such as language design, compilers, machine learning, and artificial intelligence.
+  </div>
 </body>
 </html>
