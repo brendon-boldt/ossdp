@@ -8,7 +8,13 @@ root.footerReady = ->
       $('body').css('position', 'absolute')
       console.log("here")
 
-$(document).ready(footerReady)
-$(document).on('page:load', footerReady)
+setMinHeight = ->
+  $ ->
+    $('body').css('min-height', window.innerHeight + 'px')
+
+#$(document).ready(footerReady)
+#$(document).on('page:load', footerReady)
+$(document).ready(setMinHeight)
+$(document).on('page:load', setMinHeight)
 
 

@@ -15,7 +15,7 @@
  */
 
 body {
-  padding: 0 15 15 15;
+  padding: 0 0 100px 0;
   margin: 0;
   background-color: #333;
   font-family: nimbus roman no9 l;
@@ -85,8 +85,7 @@ h1, h2, h3 {
   text-shadow:  0 0 10px black,
                 0 0 10px black,
                 0 0 10px black ;
-  //box-shadow: 0 25px 20px -10px #eee inset;
-  position: relative;
+  position: absolute;
   height : 100px;
   color : #fff;
   width : 100%;
@@ -94,8 +93,6 @@ h1, h2, h3 {
   text-align : center;
   vertical-align: text-center;
   font-variant: small-caps;
-  //background-image: url('/images/f2.jpg');
-  background-position: 100% 30%;
   font-size: 14pt;
   z-index: -1;
 }
