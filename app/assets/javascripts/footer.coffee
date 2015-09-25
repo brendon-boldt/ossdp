@@ -1,22 +1,14 @@
-
-###
-$(document).ready(function () {
-  if (true || $(document).height > $('#bottomBanner').offset().top) {
-    $('#bottomBanner, #bottomBannerImage').css('position', 'absolute', 'bottom', '0')
-  }
-})
-###
-
-ready = -> 
-
+root = exports ? this
+root.footerReady = -> 
   $ ->
     bb = $('#bottomBanner')
     if (window.innerHeight > bb.offset().top + bb.height())
       $('#bottomBanner').css('position', 'absolute', 'bottom', '0')
       $('#bottomBannerImage').css('bottom','0')
       $('body').css('position', 'absolute')
+      console.log("here")
 
-$(document).ready(ready)
-$(document).on('page:load', ready)
+$(document).ready(footerReady)
+$(document).on('page:load', footerReady)
 
 
